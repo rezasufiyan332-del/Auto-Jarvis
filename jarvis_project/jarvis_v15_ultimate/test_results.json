@@ -1,0 +1,371 @@
+{
+  "summary": {
+    "total_tests": 45,
+    "passed_tests": 37,
+    "failed_tests": 8,
+    "duration": 3.22060489654541,
+    "timestamp": "2025-11-02T18:18:39.960423"
+  },
+  "results": [
+    {
+      "name": "File: jarvis.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740039"
+    },
+    {
+      "name": "File: requirements_termux_v15.txt",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740101"
+    },
+    {
+      "name": "File: setup_termux_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740144"
+    },
+    {
+      "name": "Directory: core",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740190"
+    },
+    {
+      "name": "Directory: config",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740237"
+    },
+    {
+      "name": "Directory: termux_native",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740284"
+    },
+    {
+      "name": "Directory: utils",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Exists",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740333"
+    },
+    {
+      "name": "File Structure",
+      "passed": true,
+      "duration": 0.0004036426544189453,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.740354"
+    },
+    {
+      "name": "Syntax: test_system_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:36.910789"
+    },
+    {
+      "name": "Syntax: jarvis.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:37.073294"
+    },
+    {
+      "name": "Syntax: setup_termux_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:37.277191"
+    },
+    {
+      "name": "Syntax: error_resolver_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:37.443500"
+    },
+    {
+      "name": "Syntax: dependency_manager_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:37.609012"
+    },
+    {
+      "name": "Syntax: termux_controller_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:37.775184"
+    },
+    {
+      "name": "Syntax: self_modifying_engine_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:37.941775"
+    },
+    {
+      "name": "Syntax: voice_calling_system_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:38.111397"
+    },
+    {
+      "name": "Syntax: error_proof_system_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:38.279461"
+    },
+    {
+      "name": "Syntax: feature_injection_engine_v15.py",
+      "passed": false,
+      "duration": 0.0,
+      "details": "  File \"/workspace/cmhi0kaoi03v7psimdi4o1pdd/Auto-Jarvis/jarvis_project/jarvis_v15_ultimate/core/feature_injection_engine_v15.py\", line 294\n    <!DOCTYPE html>\n     ^\nSyntaxError: invalid syntax\n",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:38.447372"
+    },
+    {
+      "name": "Syntax: ai_engine_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:38.621825"
+    },
+    {
+      "name": "Syntax: autonomous_executor_v15.py",
+      "passed": false,
+      "duration": 0.0,
+      "details": "  File \"/workspace/cmhi0kaoi03v7psimdi4o1pdd/Auto-Jarvis/jarvis_project/jarvis_v15_ultimate/core/autonomous_executor_v15.py\", line 816\n    if input_data.startswith('{') or input_data.startswith('['):\n                                                             ^\nSyntaxError: unterminated string literal (detected at line 816)\n",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:38.795170"
+    },
+    {
+      "name": "Syntax: automation_framework_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:38.987381"
+    },
+    {
+      "name": "Syntax: github_learning_engine_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.150431"
+    },
+    {
+      "name": "Syntax: safety_config_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.307267"
+    },
+    {
+      "name": "Syntax: termux_config_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.465215"
+    },
+    {
+      "name": "Syntax: openrouter_config_v15.py",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Valid syntax",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.627794"
+    },
+    {
+      "name": "Python Syntax",
+      "passed": false,
+      "duration": 2.887495994567871,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.627863"
+    },
+    {
+      "name": "Requirements file content",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Contains dependencies",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.628186"
+    },
+    {
+      "name": "Main file structure",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Contains main entry point",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.628203"
+    },
+    {
+      "name": "Configuration",
+      "passed": true,
+      "duration": 0.00034332275390625,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.628219"
+    },
+    {
+      "name": "Module Imports",
+      "passed": false,
+      "duration": 0.17433762550354004,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.802570"
+    },
+    {
+      "name": "Termux environment",
+      "passed": false,
+      "duration": 0.0,
+      "details": "Non-Termux environment",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.806787"
+    },
+    {
+      "name": "Command: python",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Available",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.806820"
+    },
+    {
+      "name": "Command: pkg",
+      "passed": false,
+      "duration": 0.0,
+      "details": "Not found",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.806831"
+    },
+    {
+      "name": "Command: git",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Available",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.806841"
+    },
+    {
+      "name": "Termux-API",
+      "passed": false,
+      "duration": 0.0,
+      "details": "Not installed",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.806850"
+    },
+    {
+      "name": "Environment",
+      "passed": false,
+      "duration": 0.004282236099243164,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.806865"
+    },
+    {
+      "name": "Async functionality",
+      "passed": true,
+      "duration": 0.0,
+      "details": "Async operations work",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908133"
+    },
+    {
+      "name": "JSON operations",
+      "passed": true,
+      "duration": 0.0,
+      "details": "JSON serialization works",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908171"
+    },
+    {
+      "name": "File operations",
+      "passed": true,
+      "duration": 0.0,
+      "details": "File I/O works",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908185"
+    },
+    {
+      "name": "Core Functionality",
+      "passed": true,
+      "duration": 0.10132884979248047,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908202"
+    },
+    {
+      "name": "Import error handling",
+      "passed": true,
+      "duration": 0.0,
+      "details": "ImportError properly caught",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908573"
+    },
+    {
+      "name": "File error handling",
+      "passed": true,
+      "duration": 0.0,
+      "details": "FileNotFoundError properly caught",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908600"
+    },
+    {
+      "name": "Error Handling",
+      "passed": true,
+      "duration": 0.0004031658172607422,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.908617"
+    },
+    {
+      "name": "Memory usage",
+      "passed": true,
+      "duration": 0.0,
+      "details": "33.0MB",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.959991"
+    },
+    {
+      "name": "Performance",
+      "passed": true,
+      "duration": 0.05140089988708496,
+      "details": "",
+      "error": "",
+      "timestamp": "2025-11-02T18:18:39.960028"
+    }
+  ]
+}

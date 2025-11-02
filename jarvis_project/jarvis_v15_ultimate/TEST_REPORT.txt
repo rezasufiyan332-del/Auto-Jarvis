@@ -1,0 +1,97 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║                JARVIS v15 Test Report                          ║
+╚══════════════════════════════════════════════════════════════╝
+
+📊 Test Summary:
+   • Total Tests: 45
+   • Passed: 37 (82.2%)
+   • Failed: 8
+   • Duration: 3.2 seconds
+   • Status: ⚠️  SOME TESTS FAILED
+
+📋 Test Results:
+   ✅ PASS File: jarvis.py - Exists
+   ✅ PASS File: requirements_termux_v15.txt - Exists
+   ✅ PASS File: setup_termux_v15.py - Exists
+   ✅ PASS Directory: core - Exists
+   ✅ PASS Directory: config - Exists
+   ✅ PASS Directory: termux_native - Exists
+   ✅ PASS Directory: utils - Exists
+   ✅ PASS File Structure
+   ✅ PASS Syntax: test_system_v15.py - Valid syntax
+   ✅ PASS Syntax: jarvis.py - Valid syntax
+   ✅ PASS Syntax: setup_termux_v15.py - Valid syntax
+   ✅ PASS Syntax: error_resolver_v15.py - Valid syntax
+   ✅ PASS Syntax: dependency_manager_v15.py - Valid syntax
+   ✅ PASS Syntax: termux_controller_v15.py - Valid syntax
+   ✅ PASS Syntax: self_modifying_engine_v15.py - Valid syntax
+   ✅ PASS Syntax: voice_calling_system_v15.py - Valid syntax
+   ✅ PASS Syntax: error_proof_system_v15.py - Valid syntax
+   ❌ FAIL Syntax: feature_injection_engine_v15.py -   File "/workspace/cmhi0kaoi03v7psimdi4o1pdd/Auto-Jarvis/jarvis_project/jarvis_v15_ultimate/core/feature_injection_engine_v15.py", line 294
+    <!DOCTYPE html>
+     ^
+SyntaxError: invalid syntax
+
+   ✅ PASS Syntax: ai_engine_v15.py - Valid syntax
+   ❌ FAIL Syntax: autonomous_executor_v15.py -   File "/workspace/cmhi0kaoi03v7psimdi4o1pdd/Auto-Jarvis/jarvis_project/jarvis_v15_ultimate/core/autonomous_executor_v15.py", line 816
+    if input_data.startswith('{') or input_data.startswith('['):
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 816)
+
+   ✅ PASS Syntax: automation_framework_v15.py - Valid syntax
+   ✅ PASS Syntax: github_learning_engine_v15.py - Valid syntax
+   ✅ PASS Syntax: safety_config_v15.py - Valid syntax
+   ✅ PASS Syntax: termux_config_v15.py - Valid syntax
+   ✅ PASS Syntax: openrouter_config_v15.py - Valid syntax
+   ❌ FAIL Python Syntax
+   ✅ PASS Requirements file content - Contains dependencies
+   ✅ PASS Main file structure - Contains main entry point
+   ✅ PASS Configuration
+   ❌ FAIL Module Imports
+   ❌ FAIL Termux environment - Non-Termux environment
+   ✅ PASS Command: python - Available
+   ❌ FAIL Command: pkg - Not found
+   ✅ PASS Command: git - Available
+   ❌ FAIL Termux-API - Not installed
+   ❌ FAIL Environment
+   ✅ PASS Async functionality - Async operations work
+   ✅ PASS JSON operations - JSON serialization works
+   ✅ PASS File operations - File I/O works
+   ✅ PASS Core Functionality
+   ✅ PASS Import error handling - ImportError properly caught
+   ✅ PASS File error handling - FileNotFoundError properly caught
+   ✅ PASS Error Handling
+   ✅ PASS Memory usage - 33.0MB
+   ✅ PASS Performance
+
+⚠️  Failed Tests Details:
+   • Syntax: feature_injection_engine_v15.py:   File "/workspace/cmhi0kaoi03v7psimdi4o1pdd/Auto-Jarvis/jarvis_project/jarvis_v15_ultimate/core/feature_injection_engine_v15.py", line 294
+    <!DOCTYPE html>
+     ^
+SyntaxError: invalid syntax
+
+   • Syntax: autonomous_executor_v15.py:   File "/workspace/cmhi0kaoi03v7psimdi4o1pdd/Auto-Jarvis/jarvis_project/jarvis_v15_ultimate/core/autonomous_executor_v15.py", line 816
+    if input_data.startswith('{') or input_data.startswith('['):
+                                                             ^
+SyntaxError: unterminated string literal (detected at line 816)
+
+   • Python Syntax: 
+   • Module Imports: 
+   • Termux environment: Non-Termux environment
+   • Command: pkg: Not found
+   • Termux-API: Not installed
+   • Environment: 
+
+💡 Recommendations:
+   • Fix failed tests before deployment
+   • Check error messages above for details
+   • Ensure all dependencies are properly installed
+
+🔧 System Information:
+   • Python: 3.12.12
+   • Platform: Linux 6.12.27-fly
+   • Architecture: x86_64
+   • Timestamp: 2025-11-02 18:18:39
+
+═══════════════════════════════════════════════════════════════
