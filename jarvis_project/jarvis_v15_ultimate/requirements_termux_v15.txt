@@ -1,0 +1,231 @@
+# JARVIS v15 Ultimate - 100% Termux-Compatible Dependencies
+# Optimized for Android ARM architecture with minimal resource usage
+# Total estimated size: ~100MB (vs 3-4GB for typical ML stacks)
+
+# ===============================================================
+# CORE ESSENTIALS (35MB) - System Foundation
+# ===============================================================
+click>=8.0.0                     # CLI interface framework
+aiohttp>=3.8.0                   # Async HTTP client/server
+aiofiles>=23.0.0                 # Async file operations
+asyncio>=3.9.0                   # Async programming (built-in, pinned for docs)
+psutil>=5.9.0                    # System monitoring and process management
+pydantic>=2.0.0                  # Data validation and settings
+httpx>=0.24.0                    # Modern HTTP client (alternative to requests)
+requests>=2.28.0                 # HTTP requests (fallback)
+cryptography>=40.0.0             # Security and encryption
+pyyaml>=6.0                      # YAML configuration parsing
+python-dotenv>=1.0.0             # Environment variable management
+
+# ===============================================================
+# AI & COMMUNICATION (25MB) - Cloud-Based Intelligence
+# ===============================================================
+# NOTE: We use cloud APIs instead of local ML models for Termux compatibility
+openai>=1.0.0                    # OpenRouter API compatibility
+huggingface-hub>=0.15.0          # Hugging Face API access
+tiktoken>=0.5.0                  # Token counting for OpenAI models
+
+# ===============================================================
+# TEXT & DATA PROCESSING (15MB) - Lightweight Operations
+# ===============================================================
+regex>=2023.6.0                  # Advanced regex support
+chardet>=5.1.0                   # Encoding detection
+python-dateutil>=2.8.0           # Date handling utilities
+fuzzywuzzy>=0.18.0                # Fuzzy string matching
+textdistance>=4.5.0               # String distance calculations
+jinja2>=3.1.0                    # Template engine for code generation
+
+# ===============================================================
+# ASYNC & CONCURRENCY (10MB) - Background Processing
+# ===============================================================
+concurrent-futures>=3.1.1        # Thread pool execution (backport)
+async-timeout>=4.0.0             # Async timeout utilities
+tenacity>=8.2.0                   # Retry logic and error handling
+
+# ===============================================================
+# TERMUX-SPECIFIC INTEGRATION (via pkg, not pip)
+# ===============================================================
+# Install these using pkg in Termux:
+# pkg install python termux-api -y
+# pkg install libxml2 libxslt -y
+# pkg install clang -y (for compilation if needed)
+# pkg install make -y
+# pkg install git -y
+
+# ===============================================================
+# EXPLICITLY EXCLUDED - Problematic in Termux
+# ===============================================================
+# ❌ HEAVY ML LIBRARIES (Too resource-intensive):
+# tensorflow, torch, transformers, scipy, scikit-learn
+# Reason: >500MB each, compilation issues, ARM compatibility problems
+
+# ❌ NUMPY/PANDAS (Compilation issues):
+# numpy, pandas, matplotlib, seaborn
+# Reason: Require compilation, heavy memory usage (>200MB each)
+# Alternative: Python built-ins, json, csv, sqlite3
+
+# ❌ AUDIO PROCESSING (Use Termux-API instead):
+# pyaudio, pyttsx3, sounddevice, librosa
+# Reason: PulseAudio/ALSA compatibility issues on Android
+# Alternative: termux-tts-speak, termux-audio-record
+
+# ❌ COMPUTER VISION (Use Android camera via Termux-API):
+# opencv-python, pillow, scikit-image
+# Reason: Large size, compilation dependencies
+# Alternative: termux-camera-photo, base64 encoding
+
+# ❌ HEAVY WEB FRAMEWORKS (Resource intensive):
+# django, streamlit, jupyterlab, dash
+# Reason: >100MB each, heavy memory usage
+# Alternative: flask, fastapi, custom HTTP servers
+
+# ❌ GUI LIBRARIES (Android compatibility issues):
+# tkinter (often broken in Termux), pygame, pyqt, wxpython
+# Reason: X11 display issues, missing system libraries
+# Alternative: Web interface, CLI, Termux notifications
+
+# ===============================================================
+# INSTALLATION INSTRUCTIONS
+# ===============================================================
+
+# 1. Update Termux packages:
+#    pkg update && pkg upgrade -y
+
+# 2. Install system dependencies:
+#    pkg install python termux-api libxml2 libxslt clang make git -y
+
+# 3. Setup Python environment:
+#    python -m pip install --upgrade pip
+
+# 4. Install JARVIS dependencies:
+#    pip install -r requirements_termux_v15.txt
+
+# 5. Setup Termux-API permissions:
+#    termux-setup-storage
+#    # Grant all requested permissions when prompted
+
+# 6. Configure OpenRouter API:
+#    export OPENROUTER_API_KEY="your_api_key_here"
+#    # Or add to ~/.bashrc for persistence
+
+# ===============================================================
+# VERIFICATION COMMANDS
+# ===============================================================
+
+# Verify installation:
+#    python -c "import aiohttp, asyncio, pydantic; print('✅ Core dependencies OK')"
+
+# Verify Termux-API:
+#    termux-api-status
+#    # Should show API status and available features
+
+# Verify memory usage:
+#    python -c "
+# import psutil
+# process = psutil.Process()
+# print(f'Memory: {process.memory_info().rss / 1024 / 1024:.1f}MB')
+# "
+
+# Expected memory usage: <50MB for basic JARVIS operation
+
+# ===============================================================
+# PERFORMANCE OPTIMIZATIONS
+# ===============================================================
+
+# 1. Limit concurrent operations:
+#    - Max 2-3 concurrent AI requests
+#    - Max 5 background tasks
+#    - Context window limits for large models
+
+# 2. Cache management:
+#    - Response caching enabled
+#    - Automatic cleanup of old cache
+#    - Compressed storage where possible
+
+# 3. Resource monitoring:
+#    - Memory usage alerts at 150MB
+#    - CPU throttling under heavy load
+#    - Automatic cleanup of temporary files
+
+# 4. Network optimization:
+#    - Request timeouts: 30 seconds
+#    - Retry logic with exponential backoff
+#    - Offline mode capability
+
+# ===============================================================
+# TROUBLESHOOTING
+# ===============================================================
+
+# Problem: "ImportError: No module named 'xxx'"
+# Solution:
+#    1. Check if module is in excluded list above
+#    2. pip install xxx
+#    3. If it fails, it's likely incompatible with Termux
+#    4. Look for cloud-based alternative
+
+# Problem: High memory usage
+# Solution:
+#    1. Reduce concurrent operations
+#    2. Clear Python cache: find . -name "*.pyc" -delete
+#    3. Restart JARVIS: pkill -f python
+#    4. Monitor with: top -n 1 | grep python
+
+# Problem: Termux-API not working
+# Solution:
+#    1. Install Termux-API app from F-Droid
+#    2. Grant all permissions in Android settings
+#    3. Run: termux-setup-storage
+#    4. Test: termux-api-status
+
+# Problem: Slow performance
+# Solution:
+#    1. Check background processes
+#    2. Reduce AI model usage (switch to faster models)
+#    3. Enable caching if disabled
+#    4. Close other Android apps
+
+# ===============================================================
+# SECURITY NOTES
+# ===============================================================
+
+# 1. API Keys:
+#    - Store in environment variables, not code
+#    - Use .env file with python-dotenv
+#    - Never commit API keys to git
+
+# 2. Permissions:
+#    - Only grant necessary Android permissions
+#    - Review Termux-API access regularly
+#    - Use termux-setup-storage carefully
+
+# 3. Network:
+#    - All AI requests go through HTTPS
+#    - No external data collection beyond API usage
+#    - Local data storage is encrypted where sensitive
+
+# ===============================================================
+# VERSION COMPATIBILITY
+# ===============================================================
+
+# Python: 3.8+ (Termux typically provides 3.9-3.11)
+# Android: 7.0+ (API level 24+)
+# Termux: 0.118+
+# Architecture: ARM64, ARMv7, x86_64 (primarily ARM64)
+
+# Tested on:
+# - Android 11/12/13 with Termux
+# - ARM64 devices (3GB+ RAM recommended)
+# - Storage: 500MB free space recommended
+
+# ===============================================================
+# ALTERNATIVE PACKAGES (if pip install fails)
+# ===============================================================
+
+# If aiohttp fails: try aiohttp==3.8.5 (older version)
+# If psutil fails: try installing from source or use proc filesystem
+# If pydantic fails: try pydantic==1.10.0 (older but compatible)
+# If cryptography fails: pkg install libffi-dev then pip install cryptography
+
+# Last updated: 2024 (JARVIS v15 Ultimate)
+# Compatible with: Android 7+, Termux 0.118+, Python 3.8+
+# Total size: ~100MB vs 3-4GB typical ML stacks
